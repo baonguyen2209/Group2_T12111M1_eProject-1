@@ -1,0 +1,90 @@
+<div ng-controller="productCtrl">
+    <div class="h2 text-center mt-5 fw-bold">Explore</div>
+    <div>
+        
+        <div class="dropdown m-3">
+            Sort By
+            <button type="button" class="btn btn-outline-secondary rounded-pill dropdown-toggle" data-bs-toggle="dropdown">
+              Default
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Value(high to low)</a></li>
+              <li><a class="dropdown-item" href="#">Date</a></li>
+              <li><a class="dropdown-item" href="#">A-Z</a></li>
+            </ul>
+        </div>
+    </div>
+    <div><hr></div>
+    <div class="row">
+        <div class="col-sm-3 mt-3" ng-repeat="fa01 in fashion01">
+            <div class="card h-100 border-0 m-3">
+                <div class="card-body m-0 p-0">
+                    <div class="card-text fw-light text-truncate">{{fa01.name}}</div>
+                    <div class="card-title fw-bold">Current Bids: $ {{fa01.price}}</div>
+                    <img src="{{fa01.img}}" alt="{{fa01.name}}" height="300px" href="" class="card-img-bottom align-items-bottom border border-dark">
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3 mt-3" ng-repeat="fa02 in fashion02">
+            <div class="card h-100 border-0 m-3">
+                <div class="card-body m-0 p-0">
+                    <div class="card-text fw-light text-truncate">{{fa02.name}}</div>
+                    <div class="card-title fw-bold">Current Bids: $ {{fa02.price}}</div>
+                    <img src="{{fa02.img}}" alt="{{fa02.name}}" height="300px" href="" class="card-img-bottom align-items-bottom border border-dark">
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3 mt-3" ng-repeat="fa03 in fashion03">
+            <div class="card h-100 border-0 m-3">
+                <div class="card-body m-0 p-0">
+                    <div class="card-text fw-light text-truncate">{{fa03.name}}</div>
+                    <div class="card-title fw-bold">Current Bids: $ {{fa03.price}}</div>
+                    <img src="{{fa03.img}}" alt="{{fa03.name}}" height="300px" href="" class="card-img-bottom align-items-bottom border border-dark">
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3 mt-3" ng-repeat="sp01 in sport01">
+            <div class="card h-100 border-0 m-3">
+                <div class="card-body m-0 p-0">
+                    <div class="card-text fw-light text-truncate">{{sp01.name}}</div>
+                    <div class="card-title fw-bold">Current Bids: $ {{sp01.price}}</div>
+                    <img src="{{sp01.img}}" alt="{{sp01.name}}" height="300px" href="" class="card-img-bottom align-items-bottom border border-dark">
+                </div>
+            </div>
+        </div>
+  
+        <div class="col-sm-3 mt-3" ng-repeat="sp02 in sport02">
+          <div class="card h-100 border-0 m-3">
+              <div class="card-body m-0 p-0">
+                  <div class="card-text fw-light text-truncate">{{sp02.name}}</div>
+                  <div class="card-title fw-bold">Current Bids: $ {{sp02.price}}</div>
+                  <img src="{{sp02.img}}" alt="{{sp02.name}}" height="300px" href="" class="card-img-bottom align-items-bottom border border-dark">
+              </div>
+          </div>
+        </div>
+  
+        <div class="col-sm-3 mt-3" ng-repeat="sp03 in sport03">
+          <div class="card h-100 border-0 m-3">
+            <div class="card-body m-0 p-0">
+                <div class="card-text fw-light text-truncate">{{sp03.name}}</div>
+                <div class="card-title fw-bold">Current Bids: $ {{sp03.price}}</div>
+                <img src="{{sp03.img}}" alt="{{sp03.name}}" height="300px" href="" class="card-img-bottom align-items-bottom border border-dark">
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-sm-3 mt-3" ng-repeat="sp04 in sport04">
+          <div class="card h-100 border-0 m-3">
+              <div class="card-body m-0 p-0">
+                  <div class="card-text fw-light text-truncate">{{sp04.name}}</div>
+                  <div class="card-title fw-bold">Current Bids: $ {{sp04.price}}</div>
+                  <img src="{{sp04.img}}" alt="{{sp04.name}}" height="300px" href="" class="card-img-bottom align-items-bottom border border-dark">
+              </div>
+          </div>
+        </div>
+
+    </div>
+</div>

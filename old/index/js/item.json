@@ -1,0 +1,56 @@
+{
+    "jewlryRingsList":
+    [
+        {"id":"", "name":"", "price": ,"date":"", "by":"", "location":"", "desciption":"", "status":"", "img":""}
+    ],
+    "jewlryEarringsList":
+    [
+        {"id":"", "name":"", "price": , "date":"", "by":"", "location":"", "desciption":"", "status":"", "img":""}
+    ],
+    "jewlryBraceletsList":
+    [
+        {"id":"", "name":"", "price": ,"date":"", "by":"", "location":"", "desciption":"", "status":"", "img":""}
+    ],
+    "jewlryNecklacesList":
+    [
+        {"id":"", "name":"", "price": ,"date":"", "by":"", "location":"", "desciption":"", "status":"", "img":""}
+    ],
+
+
+    "electronicCelAccessList":
+    [
+        {"id":"", "name":"", "price": ,"date":"", "by":"", "location":"", "desciption":"", "status":"", "img":""}
+    ],
+    "electronicComputerList":
+    [
+        {"id":"", "name":"", "price": ,"date":"", "by":"", "location":"", "desciption":"", "status":"", "img":""}
+    ],
+    "electronicVgameList":
+    [
+        {"id":"", "name":"", "price": ,"date":"", "by":"", "location":"", "desciption":"", "status":"", "img":""}
+    ],
+    "electronicSmarthomeList":
+    [
+        {"id":"", "name":"", "price": ,"date":"", "by":"", "location":"", "desciption":"", "status":"", "img":""}
+    ],
+
+
+    "artPaintingsList":
+    [
+        {"id":"", "name":"", "price": ,"date":"", "by":"", "location":"", "desciption":"", "status":"", "img":""}
+    ],
+    "artPhotographsList":
+    [
+        {"id":"", "name":"", "price": ,"date":"", "by":"", "location":"", "desciption":"", "status":"", "img":""}
+    ],
+    "artSculpturesList":
+    [
+        {"id":"", "name":"", "price": ,"date":"", "by":"", "location":"", "desciption":"", "status":"", "img":""}
+    ],
+    "artCelebList":
+    [
+        {"id":"", "name":"", "price": ,"date":"", "by":"", "location":"", "desciption":"", "status":"", "img":""}
+    ]
+
+
+}

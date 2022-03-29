@@ -1,0 +1,29 @@
+<div ng-controller="productCtrl">
+    <div class="h2 text-center">Footwear</div>
+    <div>
+        
+        <div class="dropdown m-3">
+            Sort By
+            <button type="button" class="btn btn-outline-secondary rounded-pill dropdown-toggle" data-bs-toggle="dropdown">
+              Default
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="html/fashionFootwearsortbyHightoLow.html">Value (High to Low)</a></li>
+              <li><a class="dropdown-item" href="html/fashionFootwearsortbyLowtoHigh.html">Value (Low to High)</a></li>
+              <li><a class="dropdown-item" href="html/fashionFootwearsortbyDate.html">Date</a></li>
+            </ul>
+        </div>
+    </div>
+    <div><hr></div>
+    <div class="row">
+        <div class="col-sm-3 mt-3" ng-repeat="fa01 in fashion01">
+            <div class="card h-100 border-0 m-3">
+                <div class="card-body m-0 p-0">
+                    <div class="card-text fw-light text-truncate">{{fa01.name}}</div>
+                    <div class="card-title fw-bold">Current Bids: $ {{fa01.price}}</div>
+                    <img src="{{fa01.img}}" alt="{{fa01.name}}" height="300px" href="" class="card-img-bottom align-items-bottom border border-dark">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
