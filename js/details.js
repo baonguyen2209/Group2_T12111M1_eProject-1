@@ -4,6 +4,15 @@ document.querySelector('#search-btn').onclick = () =>{
     searchForm.classList.toggle('active');
 }
 
+//menu exlore bottom navbar
+
+let exploreBottom = document.querySelector('#explore-bottom');
+exploreBottom.onclick = () =>{
+    document.querySelector('.explore-more').classList.toggle('active');
+}
+
+//menu exlore bottom navbar
+
 // shopping cart
 
 let closer = document.querySelector('#closer');
@@ -115,3 +124,26 @@ function fadeOut(){
 }
 
 // footer
+
+//load more products
+
+let box = document.querySelectorAll('.products .product-container .box');
+let loadmore = document.querySelector('#load-more');
+let currentItem = 8;
+
+for (var i=0; i<8; i++){
+    box[i].style.display = 'inline-block';
+}
+
+loadmore.onclick = () =>{
+    for (var i=currentItem; i< currentItem+8; i++){
+        box[i].style.display = 'inline-block'
+    }
+    currentItem += 8;
+
+    if (currentItem >= box.length){
+        loadmore.style.display = 'none';
+    }
+}
+
+//load more products
