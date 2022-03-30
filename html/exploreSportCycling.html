@@ -1,0 +1,79 @@
+<div ng-controller="categoryCtrl">
+    
+    <!-- section explore -->
+
+    <section class="heading1">
+        <h3>explore lots</h3>
+        <p> explore / <span>sport</span></p>
+    </section>
+
+    <!-- section explore -->
+
+    <!-- section categories -->
+
+    <section class="category">
+
+        <h1 class="title"> <span>sports</span> </h1>
+
+        <div class="box-container">
+
+            <a href="#!/Cycling" class="box">
+                <img src="../img/cycling icon.png" alt="">
+                <h3>cycling</h3>
+            </a>
+
+            <a href="#!WaterSport" class="box">
+                <img src="../img/water sport icon.png" alt="">
+                <h3>water sports</h3>
+            </a>
+
+            <a href="#!MartialArt" class="box">
+                <img src="../img/martial icon.png" alt="">
+                <h3>martial art</h3>
+            </a>
+            <a href="#!Fitness" class="box">
+                <img src="../img/fitness icon.png" alt="">
+                <h3>fitness</h3>
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- section categories -->
+
+
+    <!-- section products -->
+
+    <section class="products">
+
+        <h1 class="title"> <span>cycling items</span> </h1>
+
+        <div class="product-container">
+
+            <div class="box" ng-repeat="sp01 in sport01 | limitTo: limit">
+                <div class="icons">
+                    <a href="" class="fas fa-search"></a>
+                    <a href="" class="fas fa-heart"></a>
+                    <a href="" class="fas fa-eye"></a>    
+                </div>
+                <div class="image">
+                    <img src="../{{sp01.img}}" alt="{{sp01.id}}">
+                </div>
+                <div class="content">
+                    <h3>{{sp01.name}}</h3>
+                    <div class="price">current bids <br>
+                        <span>${{sp01.price}}</span></div>
+                    <a href="#" class="btn">bid now</a>
+                </div>
+            </div>
+
+            
+        </div>
+        <div class="load"><div class="btn" ng-click="loadMore()">load more</div></div>
+    </section>
+
+    <!-- section products -->
+
+
+</div>

@@ -1,0 +1,78 @@
+<div ng-controller="categoryCtrl">
+    
+    <!-- section explore -->
+
+    <section class="heading1">
+        <h3>explore lots</h3>
+        <p> explore / <span>electronic</span></p>
+    </section>
+
+    <!-- section explore -->
+
+    <!-- section categories -->
+
+    <section class="category">
+
+        <h1 class="title"> <span>electronic</span> </h1>
+
+        <div class="box-container">
+
+            <a href="#!CellphoneandAccessories" class="box">
+                <img src="../img/cellphone icon.png" alt="">
+                <h3>cellphones and accessories</h3>
+            </a>
+
+            <a href="#!ComputersandTablets" class="box">
+                <img src="../img/computer and tablet icon.png" alt="">
+                <h3>computers and tablets</h3>
+            </a>
+
+            <a href="#!VideosgameandConsole" class="box">
+                <img src="../img/video game and console icon.png" alt="">
+                <h3>videos game and console</h3>
+            </a>  
+            <a href="#!SmartHome" class="box">
+                <img src="../img/smart home icon.png" alt="">
+                <h3>smart home</h3>
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- section categories -->
+
+
+    <!-- section products -->
+
+    <section class="products">
+
+        <h1 class="title"> <span>smart home items</span> </h1>
+
+        <div class="product-container">
+
+            <div class="box" ng-repeat="el04 in electronic04 | limitTo: limit">
+                <div class="icons">
+                    <a href="" class="fas fa-search"></a>
+                    <a href="" class="fas fa-heart"></a>
+                    <a href="" class="fas fa-eye"></a>    
+                </div>
+                <div class="image">
+                    <img src="../{{el04.img}}" alt="{{el04.id}}">
+                </div>
+                <div class="content">
+                    <h3>{{el04.name}}</h3>
+                    <div class="price">current bids <br>
+                        <span>${{el04.price}}</span></div>
+                    <a href="#" class="btn">bid now</a>
+                </div>
+            </div>
+
+        </div>
+        <div class="load"><div class="btn" ng-click="loadMore()">load more</div></div>
+    </section>
+
+    <!-- section products -->
+
+
+</div>

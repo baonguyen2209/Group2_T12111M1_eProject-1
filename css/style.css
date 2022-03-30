@@ -851,10 +851,9 @@ html::-webkit-scrollbar-thumb{
 .products .product-container .box{
     margin:2rem 0;
     position: relative;
-    overflow: hidden;
     border:var(--border);
     text-align: center;
-    display: none;
+    display: inline-block;
 }
 
 .products .product-container .box:hover{
@@ -1553,6 +1552,59 @@ html::-webkit-scrollbar-thumb{
 }
 
 /* disclaimer */
+
+/* completed */
+
+.completed .completed-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+    gap: 1.5rem;
+}
+
+.completed .completed-container .box{
+    margin:2rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.completed .completed-container .box:hover{
+    border: .1rem solid black;
+}
+
+.completed .completed-container .box:hover .image{
+    transform: translateY(2rem);
+}
+
+.completed .completed-container .box .image{
+    padding: 1rem;
+}
+
+.completed .completed-container .box .image img{
+    height: 25rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.completed .completed-container .box .content{
+    padding: 1.5rem;
+}
+.completed .completed-container .box .content h3{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.completed .completed-container .box .content .price{
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.completed .completed-container .box .content .price span{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+/* completed */
+
 
 
 

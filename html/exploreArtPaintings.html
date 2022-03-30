@@ -1,0 +1,74 @@
+<div ng-controller="categoryCtrl">
+    
+    <!-- section explore -->
+
+    <section class="heading1">
+        <h3>explore lots</h3>
+        <p> explore / <span>art</span></p>
+    </section>
+
+    <!-- section explore -->
+
+    <!-- section categories -->
+
+    <section class="category">
+
+        <h1 class="title"> <span>art</span> </h1>
+
+        <div class="box-container">
+
+            <a href="#!Paintings" class="box">
+                <img src="../img/paintings icon.png" alt="">
+                <h3>paintings</h3>
+            </a>
+
+            <a href="#!Photographs" class="box">
+                <img src="../img/photographs icon.png" alt="">
+                <h3>photogaphs</h3>
+            </a>
+
+            <a href="#!Sculptures" class="box">
+                <img src="../img/sculptures icon.png" alt="">
+                <h3>sculptures</h3>
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- section categories -->
+
+
+    <!-- section products -->
+
+    <section class="products">
+
+        <h1 class="title"> <span>paintings items</span> </h1>
+
+        <div class="product-container">
+
+            <div class="box" ng-repeat="ar01 in art01 | limitTo: limit">
+                <div class="icons">
+                    <a href="" class="fas fa-search"></a>
+                    <a href="" class="fas fa-heart"></a>
+                    <a href="" class="fas fa-eye"></a>    
+                </div>
+                <div class="image">
+                    <img src="../{{ar01.img}}" alt="{{ar01.id}}">
+                </div>
+                <div class="content">
+                    <h3>{{ar01.name}}</h3>
+                    <div class="price">current bids <br>
+                        <span>${{ar01.price}}</span></div>
+                    <a href="#" class="btn">bid now</a>
+                </div>
+            </div>
+
+        </div>
+        <div class="load"><div class="btn" ng-click="loadMore()">load more</div></div>
+    </section>
+
+    <!-- section products -->
+
+    
+</div>

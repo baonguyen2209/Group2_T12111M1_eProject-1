@@ -159,7 +159,7 @@ for (var i=0; i<8; i++){
 
 loadmore.onclick = () =>{
     for (var i=currentItem; i< currentItem+8; i++){
-        box[i].style.display = 'inline-block'
+        box[i].style.display = 'inline-block';
     }
     currentItem += 8;
 
@@ -169,4 +169,6 @@ loadmore.onclick = () =>{
 }
 
 //load more products
+
+
 

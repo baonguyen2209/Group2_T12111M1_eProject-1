@@ -1,0 +1,74 @@
+<div ng-controller="categoryCtrl">
+    
+    <!-- section explore -->
+
+    <section class="heading1">
+        <h3>explore lots</h3>
+        <p> explore / <span>fashion</span></p>
+    </section>
+
+    <!-- section explore -->
+
+    <!-- section categories -->
+
+    <section class="category">
+
+        <h1 class="title"> <span>fashion</span> </h1>
+
+        <div class="box-container">
+
+            <a href="#!Footwear" class="box">
+                <img src="../img/footwear icon.png" alt="">
+                <h3>footwear</h3>
+            </a>
+
+            <a href="#!Clothing" class="box">
+                <img src="../img/clothing icon.png" alt="">
+                <h3>clothing</h3>
+            </a>
+
+            <a href="#!Accessories" class="box">
+                <img src="../img/accessories icon.png" alt="">
+                <h3>accessories</h3>
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- section categories -->
+
+
+    <!-- section products -->
+
+    <section class="products">
+
+        <h1 class="title"> <span>footwear items</span> </h1>
+
+        <div class="product-container">
+
+            <div class="box" ng-repeat="fa01 in fashion01 | limitTo: limit">
+                <div class="icons">
+                    <a href="" class="fas fa-search"></a>
+                    <a href="" class="fas fa-heart"></a>
+                    <a href="" class="fas fa-eye"></a>    
+                </div>
+                <div class="image">
+                    <img src="../{{fa01.img}}" alt="{{fa01.id}}">
+                </div>
+                <div class="content">
+                    <h3>{{fa01.name}}</h3>
+                    <div class="price">current bids <br>
+                        <span>${{fa01.price}}</span></div>
+                    <a href="#" class="btn">bid now</a>
+                </div>
+            </div>
+
+        </div>
+        <div class="load"><div class="btn" ng-click="loadMore()">load more</div></div>
+    </section>
+
+    <!-- section products -->
+
+
+</div>

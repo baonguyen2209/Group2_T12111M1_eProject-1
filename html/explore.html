@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AuctionsTable</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"/>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+</head>
+<body ng-app="myApp" ng-controller="sizeCtrl">
+    <!-- header section start -->
+
+    <header class="header">
+        <div class="header-1">
+            <a href="../index.html" class="logo"> <i class="fa-solid fa-gavel"></i> auctionstable </a>
+
+            <form action="" class="search-form">
+                <input type="search" name="" placeholder="search here..." id="search-box">
+                <label for="search-box" class="fas fa-search"></label>
+            </form>
+
+            <div class="icons">
+                <div id="search-btn" class="fas fa-search"></div>
+                <div id="cart-btn" class="fas fa-shopping-cart"></div>
+                <div id="login-btn" class="fa-solid fa-right-to-bracket"></div>
+                <div id="signup-btn" class="fa-solid fa-registered"></div>
+            </div>
+        </div>
+
+        <div class="header-2">
+            <nav class="navbar">
+                <div><a href="../index.html">home</a></div>
+                <div>
+                    <a href="explore.html">explore</a>
+                    <div class="sub-menu">
+                        <div class="sub-menu-item">
+                            <a href="#!Sport">sport</a>
+                            <ul>
+                                <li><a href="#!Cycling">cycling</a></li>
+                                <li><a href="#!WaterSport">water sport</a></li>
+                                <li><a href="#!MartialArt">martial art</a></li>
+                                <li><a href="#!Fitness">fitness</a></li>
+                            </ul>
+                        </div>
+                        <div class="sub-menu-item">
+                            <a href="#!Fashion">fashion</a>
+                            <ul>
+                                <li><a href="#!Footwear">footwear</a></li>
+                                <li><a href="#!Clothing">clothing</a></li>
+                                <li><a href="#!Accessories">accessories</a></li>
+                            </ul>
+                        </div>
+                        <div class="sub-menu-item">
+                            <a href="#!Jewelry">jewelry</a>
+                            <ul>
+                                <li><a href="#!Rings">rings</a></li>
+                                <li><a href="#!Earrings">earrings</a></li>
+                                <li><a href="#!Bracelets">bracelets</a></li>
+                                <li><a href="#!Necklaces">necklaces</a></li>
+                            </ul>
+                        </div>
+                        <div class="sub-menu-item">
+                            <a href="#!Electronic">electronic</a>
+                            <ul>
+                                <li><a href="#!CellphoneandAccessories">cellphones and accessories</a></li>
+                                <li><a href="#!ComputersandTablets">computers and tablets</a></li>
+                                <li><a href="#!VideosgameandConsole">videos game and console</a></li>
+                                <li><a href="#!SmartHome">smart home</a></li>
+                            </ul>
+                        </div>
+                        <div class="sub-menu-item">
+                            <a href="#!Art">art</a>
+                            <ul>
+                                <li><a href="#!Paintings">paintings</a></li>
+                                <li><a href="#!Photographs">photographs</a></li>
+                                <li><a href="#!Sculptures">sculptures</a></li>
+                            </ul>
+                        </div>
+                        <div class="sub-menu-item">
+                            <a href="#!Others">others</a>
+                        </div>
+                    </div>
+                </div>
+                <div><a href="#completed">completed</a></div>
+                <div><a href="aboutUs.html">about</a></div>
+                <div><a href="#review">review</a></div>
+            </nav>
+        </div>
+    </header>
+    <!-- header section ends -->
+
+    <!-- bottom navbar -->
+
+    <nav class="bottom-navbar">
+        <a href="../index.html" class="fas fa-home"></a>
+        <a href="#explore" id="explore-bottom" class="fa-solid fa-square-caret-left"></a>
+        <a href="#completed" class="fa-solid fa-clipboard-check"></a>
+        <a href="aboutUs.html" class="fa-solid fa-address-card"></a>
+        <a href="#review" class="fa-solid fa-star-half-stroke"></a>
+        <ul class="explore-more">
+            <li>
+                <a href="#!Sport">sport</a>
+            </li>
+            <li>
+                <a href="#!Fashion">fashion</a>
+            </li>
+            <li>
+                <a href="#!Jewelry">jewelry</a>
+            </li>
+            <li>
+                <a href="#!Electronic">electronic</a>
+            </li>
+            <li>
+                <a href="#!Art">art</a>
+            </li>
+            <li>
+                <a href="#!Others">others</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- bottom navbar -->
+
+    <!-- shopping cart -->
+
+    <div class="shopping-cart">
+
+        <div id="closer" class="fas fa-times"></div>
+
+        <div class="box" onclick="window.location.href='productdetail.html';">
+            <i class="fas fa-times"></i>
+            <img src="../img/homeimage1.jpg" alt="">
+            <div class="content">
+                <h3>bid information</h3>
+                <span class="quanlity"> 1 </span>
+                <span class="multiply"> x </span>
+                <span class="price"> $140.00 </span>
+            </div>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-times"></i>
+            <img src="../img/feature4.png" alt="">
+            <div class="content">
+                <h3>bid information</h3>
+                <span class="quanlity"> 1 </span>
+                <span class="multiply"> x </span>
+                <span class="price"> $140.00 </span>
+            </div>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-times"></i>
+            <img src="../img/feature3.png" alt="">
+            <div class="content">
+                <h3>bid information</h3>
+                <span class="quanlity"> 1 </span>
+                <span class="multiply"> x </span>
+                <span class="price"> $140.00 </span>
+            </div>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-times"></i>
+            <img src="../img/feature1.png" alt="">
+            <div class="content">
+                <h3>bid information</h3>
+                <span class="quanlity"> 1 </span>
+                <span class="multiply"> x </span>
+                <span class="price"> $140.00 </span>
+            </div>
+        </div>
+
+        <h3 class="total"> total : <span>$560.00</span> </h3>
+
+        <a href="cart.html" class="btn">checkout cart</a>
+
+    </div>
+
+    <!-- shopping cart -->
+
+    <!-- login form -->
+
+    <div class="login-form-container">
+
+        <div id="close-login-btn" class="fas fa-times"></div>
+
+        <form action="">
+            <h3>sign in</h3>
+            <span>username</span>
+            <input type="email" name="" class="box" placeholder="enter your email" id="">
+            <span>password</span>
+            <input type="password" name="" class="box" placeholder="enter your password" id="">
+            <div class="checkbox">
+                <input type="checkbox" name="" id="remember-me">
+                <label for="remember-me">remember me</label>
+            </div>
+            <input type="submit" value="sign in" class="btn">
+            <p>forget password ?<a href="#"> click here</a></p>
+            <p>don't have an account ?<a href="#" id="createone-btn"> create one</a></p>
+        </form>
+
+    </div>
+
+    <!-- login form -->
+
+    <!-- sign up form -->
+
+    <div class="signup-form-container">
+
+        <div id="close-signup-btn" class="fas fa-times"></div>
+
+        <form action="">
+            <h3>sign up</h3>
+            <span>username <p>already have an account ? <a href="#" id="signin-btn">sign in</a></p></span>
+            <input type="email" name="" class="box" placeholder="enter your email" id="">
+            <span>password</span>
+            <input type="password" name="" class="box" placeholder="enter your password" id="">
+            <div class="checkbox">
+                <input type="checkbox" name="" id="remember-me1">
+                <label for="remember-me1">remember me</label>
+            </div>
+            <input type="submit" value="sign up" class="btn">
+            <p>By clicking the "Sign up" button, you are creating an account, and agree to AuctionsTable' <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></p>
+        </form>
+
+    </div>
+
+    <!-- sign up form -->
+
+    <!-- section explore -->
+
+    <div ng-view></div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular-route.js"></script>
+    <script>
+        var app = angular.module("myApp", ['ngRoute']);
+        app.config(function($routeProvider){
+            $routeProvider
+            .when("/", {
+                templateUrl: "explorepage.html"
+            })
+            //Sport link
+            .when("/Sport", {
+                templateUrl:"exploreSport.html"
+            })
+            .when("/Cycling", {
+                templateUrl:"exploreSportCycling.html"
+            })
+            .when("/WaterSport", {
+                templateUrl:"exploreSportWaterSport.html"
+            })
+            .when("/MartialArt", {
+                templateUrl:"exploreSportMartialArt.html"
+            })
+            .when("/Fitness", {
+                templateUrl:"exploreSportFitness.html"
+            })
+
+            //Fashion link
+            .when("/Fashion", {
+                templateUrl:"exploreFashion.html"
+            })
+            .when("/Footwear", {
+                templateUrl:"exploreFashionFootwear.html"
+            })
+            .when("/Clothing", {
+                templateUrl:"exploreFashionClothing.html"
+            })
+            .when("/Accessories", {
+                templateUrl:"exploreFashionAccessories.html"
+            })
+
+            //Electronic link    
+            .when("/Electronic", {
+                templateUrl:"exploreElectronic.html"
+            })
+            .when("/CellphoneandAccessories", {
+                templateUrl:"exploreElectronicPhoneAccessories.html"
+            })
+            .when("/ComputersandTablets", {
+                templateUrl:"exploreElectronicComputersandTablets.html"
+            })
+            .when("/VideosgameandConsole", {
+                templateUrl:"exploreElectronicVgamenConsole.html"
+            })
+            .when("/SmartHome", {
+                templateUrl:"exploreElectronicSmartHome.html"
+            })
+
+            //Art link
+            .when("/Art", {
+                templateUrl:"exploreArt.html"
+            })
+            .when("/Paintings", {
+                templateUrl:"exploreArtPaintings.html"
+            })
+            .when("/Photographs", {
+                templateUrl:"exploreArtPhotographs.html"
+            })
+            .when("/Sculptures", {
+                templateUrl:"exploreArtSculptures.html"
+            })
+
+            //Jewelry link
+            .when("/Jewelry", {
+                templateUrl:"exploreJewelry.html"
+            })
+            .when("/Rings", {
+                templateUrl:"exploreJewelryRings.html"
+            })
+            .when("/Earrings", {
+                templateUrl:"exploreJewelryEarrings.html"
+            })
+            .when("/Bracelets", {
+                templateUrl:"exploreJewelryBracelets.html"
+            })
+            .when("/Necklaces", {
+                templateUrl:"exploreJewelryNecklaces.html"
+            })
+
+            //Others link
+            .when("/Others", {
+                templateUrl:"exploreOthers.html"
+            })
+            
+        });
+
+        app.run(function($rootScope, $http){
+            $http.get("../js/items.json").then(function(rsp){
+
+                $rootScope.sport01 = rsp.data.sportCyclingList;
+                $rootScope.sport02 = rsp.data.sportWaterList;
+                $rootScope.sport03 = rsp.data.sportMartialartList;
+                $rootScope.sport04 = rsp.data.sportFitnessList;
+    
+                $rootScope.fashion01 = rsp.data.fashionFootwearList;
+                $rootScope.fashion02 = rsp.data.fashionClothingList;
+                $rootScope.fashion03 = rsp.data.fashionAccessoriesList;
+
+                $rootScope.jewelry01 = rsp.data.jewelryRingsList;
+                $rootScope.jewelry02 = rsp.data.jewelryEarringsList;
+                $rootScope.jewelry03 = rsp.data.jewelryBraceletsList;
+                $rootScope.jewelry04 = rsp.data.jewelryNecklacesList;
+
+                $rootScope.electronic01 = rsp.data.electronicCelAccessList;
+                $rootScope.electronic02 = rsp.data.electronicComTabList;
+                $rootScope.electronic03 = rsp.data.electronicVgameList;
+                $rootScope.electronic04 = rsp.data.electronicSmartHomeList;
+
+                $rootScope.art01 = rsp.data.artPaintingsList;
+                $rootScope.art02 = rsp.data.artPhotographsList;
+                $rootScope.art03 = rsp.data.artSculpturesList;
+                $rootScope.art04 = rsp.data.artCelebList;
+            })
+        })
+
+        app.controller("categoryCtrl", function($scope){
+  
+        });
+
+        app.controller('sizeCtrl', function($scope){
+            $scope.limit = 8;
+            $scope.loadMore = function(){
+                $scope.limit += 8;
+                
+            }
+        });
+        
+    </script>
+
+    <!-- section products -->
+
+    <!-- footer section starts -->
+
+    <section class="footer">
+
+        <div class="box-container">
+    
+            <div class="box">
+                <h3>our locations</h3>
+                <a href="#"> <i class="fas fa-map-marker-alt"></i> vietnam </a>
+                <a href="#"> <i class="fas fa-map-marker-alt"></i> USA </a>
+                <a href="#"> <i class="fas fa-map-marker-alt"></i> russia </a>
+                <a href="#"> <i class="fas fa-map-marker-alt"></i> france </a>
+                <a href="#"> <i class="fas fa-map-marker-alt"></i> japan </a>
+            </div>
+    
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="index.html"> <i class="fas fa-arrow-right"></i> home </a>
+                <a href="exploreOthers.html"> <i class="fas fa-arrow-right"></i> explore </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> completed </a>
+                <a href="aboutUs.html"> <i class="fas fa-arrow-right"></i> about </a>
+            </div>
+    
+            <div class="box">
+                <h3>extra links</h3>
+                <a href="#"> <i class="fas fa-arrow-right"></i> privacy policy </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> payment method </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> our serivces </a>
+                <a href="aboutUs.html"> <i class="fas fa-arrow-right"></i> disclaimer </a>
+            </div>
+    
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#"> <i class="fas fa-phone"></i> +123-456-7890 </a>
+                <a href="#"> <i class="fas fa-phone"></i> +111-222-3333 </a>
+                <a href="#"> <i class="fas fa-envelope"></i>  group2.t1.2111.m1@gmail.com </a>
+                <img src="../img/worldmap.png" class="map" alt="">
+            </div>
+            
+        </div>
+    
+        <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+            <a href="#" class="fab fa-pinterest"></a>
+        </div>
+    
+        <div class="credit"> copyright © 2022 <span>auctionsTable</span> | all rights reserved! </div>
+    
+    </section>
+    
+    <!-- footer section ends -->
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <!-- custom js ile link -->
+    <script src="../js/script.js"></script>
+    
+</body>
+</html>
