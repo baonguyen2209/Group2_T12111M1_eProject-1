@@ -907,6 +907,8 @@ html::-webkit-scrollbar-thumb{
 .products .product-container .box .content h3{
     font-size: 2rem;
     color:var(--black);
+    overflow: hidden;
+    height: 9rem;
 }
 
 .products .product-container .box .content .price{

@@ -170,6 +170,13 @@
         {"id":"ar04002", "name":"Michael Jackson's white button up shirt", "price": 21000, " date": "Feb 26, 2022 7:20 AM GMT", "by":"FrankCascio", "location":"Los Angeles, America", "status":"Good condition", "img":"img/ar04002_1.jpg"},
         {"id":"ar04003", "name":"Kobe Bryant Signed Game Used Patch Rookie Card", "price": 20000, " date": "Mar 7, 2022 4:50 PM GMT", "by":"JimJD", "location":"Los Angeles, America", "status":"Good condition", "img":"img/ar04003_1.jpg"},
         {"id":"ar04004", "name":"Bob Dylan and Johnny Cash", "price": 13750, " date": "Jan 30, 2022 2:00 AM GMT", "by":"Russell Young", "location":"New York, America", "status":"Good condition", "img":"img/ar04004_1.jpg"}
+    ],
+
+    "otherList":
+    [
+        {"id":"ot001", "name":"Opus One, Red Blend, Napa Valley 2013 (1 DM)", "price": 1200,"date":"Mar 2, 2022 4:00 PM GMT", "by":"Wine Boy", "location":"Roma, Italy", "status":"Good Condition", "img":"img/ot001_1.jpg"},
+        {"id":"ot002", "name":"Silver and Enamel Baby Cup", "price": 627,"date":"Mar 2, 2022 2:15 PM GMT", "by":"Tiffany & Co.", "location":"Venice, Italy", "status":"Good condition", "img":"img/ot002_1.jpg"},
+        {"id":"ot003", "name":"German Parcel-Gilt Silver Figural Wedding Cup Circa 1915", "price": 2450,"date":"Feb 28, 2022 7:23 PM GMT", "by":"Georg Roth & Co.", "location":"Paris, France", "status":"Good condition", "img":"img/ot003_1.jpg"}
     ]
 }
 
