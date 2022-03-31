@@ -13,25 +13,7 @@ exploreBottom.onclick = () =>{
 
 //menu exlore bottom navbar
 
-// shopping cart
 
-let closer = document.querySelector('#closer');
-
-closer.onclick = () =>{
-    closer.style.display = 'none';
-    cartForm.classList.remove('active');
-}
-
-let cartForm = document.querySelector('.shopping-cart');
-
-document.querySelector('#cart-btn').onclick = () =>{
-    closer.style.display = 'block';
-    cartForm.classList.toggle('active');
-// document.querySelector('#close-login-btn').onclick = () =>{
-//     cartForm.classList.remove('active');
-}
-
-// shopping cart
 
 // login
 
