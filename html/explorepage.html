@@ -1,1 +1,52 @@
-nothing
+<div ng-controller="categoryCtrl">
+    
+    <!-- section explore -->
+
+    <section class="heading1">
+        <h3>explore lots</h3>
+        <p> explore / <span></span></p>
+    </section>
+
+    <!-- section explore -->
+
+    <!-- section categories -->
+
+    
+
+    <!-- section categories -->
+
+
+    <!-- section products -->
+
+    <section class="products">
+
+        <h1 class="title"> <span>Explore items</span> </h1>
+
+        <div class="product-container">
+
+            <!-- Art -->
+            <div class="box" ng-repeat="items in art01.concat(art02, art03, sport02, sport03, sport04, jewelry02, jewelry03, jewelry04, electronic02, electronic03, electronic04, fashion02, fashion03, other01) | limitTo: limit">
+                <div class="icons">
+                    <a href="" class="fas fa-search"></a>
+                    <a href="" class="fas fa-heart"></a>
+                    <a href="" class="fas fa-eye"></a>    
+                </div>
+                <div class="image">
+                    <img src="../{{items.img}}" alt="{{items.id}}">
+                </div>
+                <div class="content">
+                    <h3>{{items.name}}</h3>
+                    <div class="price">current bids <br>
+                        <span>${{items.price}}</span></div>
+                    <a href="#" class="btn">bid now</a>
+                </div>
+            </div>
+            
+        </div>
+        <div class="load"><div class="btn" ng-click="loadMore()">load more</div></div>
+    </section>
+
+    <!-- section products -->
+
+
+</div>

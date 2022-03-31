@@ -47,19 +47,19 @@
 
         <div class="product-container">
 
-            <div class="box" ng-repeat="fa01 in fashion01.concat(fashion02, fashion03)  | limitTo: limit">
+            <div class="box" ng-repeat="fashion in fashion01.concat(fashion02, fashion03)  | limitTo: limit">
                 <div class="icons">
                     <a href="" class="fas fa-search"></a>
                     <a href="" class="fas fa-heart"></a>
                     <a href="" class="fas fa-eye"></a>    
                 </div>
                 <div class="image">
-                    <img src="../{{fa01.img}}" alt="{{fa01.id}}">
+                    <img src="../{{fashion.img}}" alt="{{fashion.id}}">
                 </div>
                 <div class="content">
-                    <h3>{{fa01.name}}</h3>
+                    <h3>{{fashion.name}}</h3>
                     <div class="price">current bids <br>
-                        <span>${{fa01.price}}</span></div>
+                        <span>${{fashion.price}}</span></div>
                     <a href="#" class="btn">bid now</a>
                 </div>
             </div>

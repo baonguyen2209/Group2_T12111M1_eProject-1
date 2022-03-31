@@ -47,19 +47,19 @@
 
         <div class="product-container">
 
-            <div class="box" ng-repeat="ar01 in art01.concat(art02, art03) | limitTo: limit">
+            <div class="box" ng-repeat="art in art01.concat(art02, art03) | limitTo: limit">
                 <div class="icons">
                     <a href="" class="fas fa-search"></a>
                     <a href="" class="fas fa-heart"></a>
                     <a href="" class="fas fa-eye"></a>    
                 </div>
                 <div class="image">
-                    <img src="../{{ar01.img}}" alt="{{ar01.id}}">
+                    <img src="../{{art.img}}" alt="{{art.id}}">
                 </div>
                 <div class="content">
-                    <h3>{{ar01.name}}</h3>
+                    <h3>{{art.name}}</h3>
                     <div class="price">current bids <br>
-                        <span>${{ar01.price}}</span></div>
+                        <span>${{art.price}}</span></div>
                     <a href="#" class="btn">bid now</a>
                 </div>
             </div>

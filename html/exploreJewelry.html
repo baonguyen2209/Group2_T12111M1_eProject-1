@@ -52,19 +52,19 @@
 
         <div class="product-container">
 
-            <div class="box" ng-repeat="je01 in jewelry01.concat(jewelry02, jewelry03, jewelry04) | limitTo: limit">
+            <div class="box" ng-repeat="jewelry in jewelry01.concat(jewelry02, jewelry03, jewelry04) | limitTo: limit">
                 <div class="icons">
                     <a href="" class="fas fa-search"></a>
                     <a href="" class="fas fa-heart"></a>
                     <a href="" class="fas fa-eye"></a>    
                 </div>
                 <div class="image">
-                    <img src="../{{je01.img}}" alt="{{je01.id}}">
+                    <img src="../{{jewelry.img}}" alt="{{jewelry.id}}">
                 </div>
                 <div class="content">
-                    <h3>{{je01.name}}</h3>
+                    <h3>{{jewelry.name}}</h3>
                     <div class="price">current bids <br>
-                        <span>${{je01.price}}</span></div>
+                        <span>${{jewelry.price}}</span></div>
                     <a href="#" class="btn">bid now</a>
                 </div>
             </div>
