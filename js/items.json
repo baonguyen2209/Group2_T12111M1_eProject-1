@@ -22,7 +22,7 @@
     "sportMartialartList":
     [
         {"id":"sp03001", "name":"Men Silicone Teeth Mouth Guard Protector", "price": 3, "date":"Feb 20, 2022 9:00 AM GMT", "by":"OEM Company", "location":"Ho Chi Minh, Vietnam", "status":"Good Condition", "img":"img/sp03001_Men Silicone Teeth Mouth Guard Protector for Boxing Basketball NEW-1.jpg"},
-        {"id":"sp03002", "name":"Taekwondo Kick Pad Takwondo Target 14.8 X 7.1 X 2.4inch Punching Training Target", "price": 18.8 , "date":"Jan 25, 2022 6:00 AM GMT", "by":"BiShop", "location":"Seoul, Korea", "status":"Good Condition", "img":"img/p03002_1.jpg"},
+        {"id":"sp03002", "name":"Taekwondo Kick Pad Takwondo Target 14.8 X 7.1 X 2.4inch Punching Training Target", "price": 18.8 , "date":"Jan 25, 2022 6:00 AM GMT", "by":"BiShop", "location":"Seoul, Korea", "status":"Good Condition", "img":"img/sp03002_1.jpg"},
         {"id":"sp03003", "name":"Takwondo Target Target Pad High Density EVA Sponge Kick Punching Pad PU", "price": 49 , "date":"Mar 01, 2022 3:00 PM GMt", "by":"JackSing", "location":"Shanghai, China", "status":"Good condition", "img":"img/sp03003_1.jpg"},
         {"id":"sp03004", "name":"Farabi Head Guard Boxing MMA Muay Thai Training, Sparring Head Protector", "price": 39, "date":"Jan 04, 2022 4:00 PM GMT", "by":"PhuketShop", "location":"Bangkok, Thailand", "status":"Good Condion", "img":"img/sp03004_1.jpg"},
         {"id":"sp03005", "name":"Cleto Reyes Hook and Loop Leather Training Boxing Gloves", "price": 60, "date": "Dec 17, 2021 5:00 PM GMT", "by":"RonadShop", "location":"Sao Paolo, Brazil", "status": "Good condition", "img":"img/sp03005_1.jpg"},
@@ -31,7 +31,7 @@
     ],
     "sportFitnessList":
     [
-        {"id":"sp04001", "name":"NEW Nike Phantom Venom Elite TC FG Soccer Cleats", "price": 29, "date":"Jan 03, 2022 6:00 AM GMT", "by":"Zephys", "location":"Rio de Janeiro, Brazil", "status":"Good Condition", "img":"img/sp04001_NEW Nike Phantom Venom Elite TC FG Soccer Cleats CJ6319-001 Black Men's Size 13-1.jpg"},
+        {"id":"sp04001", "name":"NEW Nike Phantom Venom Elite TC FG Soccer Cleats", "price": 29, "date":"Jan 03, 2022 6:00 AM GMT", "by":"Zephys", "location":"Rio de Janeiro, Brazil", "status":"Good Condition", "img":"img/sp04001_1.jpg"},
         {"id":"sp04002", "name":"Yoga Resistance Bands Pull Rope Rubber Workout Equipment Chest Developer Fitness", "price": 9, "date": "Oct 29, 2021 7:45 AM GMT", "by":"Karolis", "location": "Nottingham, England", "status": "Good condition", "img":"img/sp04002_1.jpg"},
         {"id":"sp04003", "name":"Ab Wheel Roller Hanger Holder - Mount Your Ab Wheel On The Wall!", "price": 59.99, "date": "Jan 25, 2022 7:30 PM GMT", "by":"Agodas", "location": "Nelson, New Zealand", "status": "Good condition", "img":"img/sp04003_1.jpg"},
         {"id":"sp04004", "name":"Heavy Gripper Hand Grip Exercise Wrist Finger Fitness Strength Arm Grippers Set", "price": 28.3, "date": "Feb 04, 2022 8:40 AM GMT", "by":"AnthonyShop", "location":"Napier, New Zealand", "status": "Good condition", "img":"img/sp04004_1.jpg"},
