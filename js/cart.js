@@ -147,6 +147,7 @@ var shoppingCart = (function() {
     var price = Number($(this).data('price'));
     var img = $(this).data('img');
     shoppingCart.addItemToCart(name, price, 1, img);
+    alert("Place bid success !")
     displayCart();
   });
   
@@ -167,7 +168,10 @@ var shoppingCart = (function() {
       + "<td><img src='..//" + cartArray[i].img + "' alt=''></td>"
       + "<td>" + cartArray[i].name + "</td>"
       + "<td> $" + cartArray[i].price.toFixed(2) + "</td>"
-      + "<td><input type='number' value='1'></td>";
+      + "<td><input type='number' value='1'></td>"
+      + "<td>" + cartArray[i].price.toFixed(2)  +"</td>"
+
+
     }
     $('.show-cart').html(output);
     $('.total-cart').html(shoppingCart.totalCart());
