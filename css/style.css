@@ -1606,7 +1606,93 @@ html::-webkit-scrollbar-thumb{
 
 /* completed */
 
+/* payment */
 
+.payment-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(120deg, #fff 60%, var(--red) 40.1%);
+    padding: 1.5rem;
+    min-height: 100vh;
+}
+
+.payment-container form{
+    padding:1.25rem;
+    width:700px;
+    background: #fff;
+    box-shadow: var(--box-shadow);
+    border: var(--border);
+}
+
+.payment-container form .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1rem;
+}
+
+.payment-container form .row .col{
+    flex:1 1 15.5rem;
+}
+
+.payment-container form .row .col .title-payment{
+    font-size: 2rem;
+    color:#333;
+    padding-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.payment-container form .row .col .inputBox{
+    margin:1rem 0;
+}
+
+.payment-container form .row .col .inputBox span{
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.payment-container form .row .col .inputBox input{
+    width: 100%;
+    border: var(--border);
+    padding:.9rem 1rem;
+    font-size: 1.5rem;
+    text-transform: none;
+}
+
+.payment-container form .row .col .inputBox input:focus{
+    border:.1rem solid #000;
+}
+
+.payment-container form .row .col .flex{
+    display: flex;
+    gap:1rem;
+}
+
+.payment-container form .row .col .flex .inputBox{
+    margin-top: 1rem;
+}
+
+.payment-container form .row .col .inputBox img{
+    height: 3.5rem;
+    margin-top: .4rem;
+    filter: drop-shadow(0 0 .1rem #000);
+}
+
+.payment-container form .submit-btn{
+    width: 100%;
+    padding:1.2rem;
+    font-size: 2rem;
+    background: var(--red);
+    color:#fff;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.payment-container form .submit-btn:hover{
+    background: var(--black);
+}
+/* payment */
 
 
 
