@@ -849,7 +849,7 @@ html::-webkit-scrollbar-thumb{
     gap: 1.5rem;
 }
 .products .product-container .box{
-    margin:2rem 0;
+    margin:3rem 0;
     position: relative;
     border:var(--border);
     text-align: center;
@@ -862,7 +862,6 @@ html::-webkit-scrollbar-thumb{
 
 .products .product-container .box .image{
     padding:1rem;
-    background: linear-gradient(15deg, #eee 30%, #fff 30.1%);
 }
 
 .products .product-container .box:hover .image{
@@ -876,7 +875,7 @@ html::-webkit-scrollbar-thumb{
 }
 
 .products .product-container .box .icons{
-    border-bottom: var(--border-hover);
+    border-bottom: .1rem solid var(--border);
     position: absolute;
     top:0; left:0; right: 0;
     background: #fff;
@@ -885,6 +884,7 @@ html::-webkit-scrollbar-thumb{
 }
 
 .products .product-container .box:hover .icons{
+    border-bottom: .1rem solid var(--black);
     transform: translateY(0%);
 }
 
@@ -900,7 +900,6 @@ html::-webkit-scrollbar-thumb{
 }
 
 .products .product-container .box .content{
-    background:#eee;
     padding:1.5rem;
 }
 
